@@ -1,4 +1,5 @@
 # Advanced OCR Receipt Scanner
+(Vibecoded)
 
 A production-grade, modular Python application that automates receipt cropping, perspective correction, image enhancement, and field parsing using OpenCV and Tesseract OCR.
 
