@@ -1,0 +1,3 @@
+"""
+Receipt Scanner package.
+"""
