@@ -100,7 +100,7 @@ def get_image_files(input_path: str) -> List[str]:
     if os.path.isdir(input_path):
         files = []
 
-        # Recursive directory scan
+        # Recursive directory scan for supported images
         for root, _, filenames in os.walk(input_path):
             for filename in filenames:
                 ext = os.path.splitext(filename)[1].lower()
@@ -375,6 +375,7 @@ def main() -> None:
         len(input_files)
     )
 
+    # Final completion message
     logger.info("OCR Receipt Scanner task completed.")
 
 
