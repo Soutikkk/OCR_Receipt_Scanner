@@ -6,9 +6,10 @@ from typing import List, Dict, Any
 
 from scanner.utils import setup_logger, read_image, write_image
 from scanner.preprocessing import ReceiptPreprocessor
-from scanner.ocr_engine import OcrEngine, TesseractNotFoundError
 from scanner.parser import ReceiptParser
 from scanner.exporter import export_to_json, export_to_csv
+from scanner.ocr_engine import OcrEngine, TesseractNotFoundError
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
